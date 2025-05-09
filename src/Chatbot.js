@@ -27,7 +27,7 @@ function MBTIPredictor() {
   };
 
   const handleSubmit = async () => {
-    const response = await fetch('https://predictions76.railway.app/api/predict/', {
+    const response = await fetch('https://predictions76.up.railway.app/api/predict/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ text }),
@@ -39,7 +39,7 @@ function MBTIPredictor() {
   };
 
   const handleCheckQualities = async () => {
-    const response = await fetch(`https://predictions76.railway.app/api/qualities/?type=${mbti}`);
+    const response = await fetch(`https://predictions76.up.railway.app/api/qualities/?type=${mbti}`);
     const data = await response.json();
     const traitsArray = typeof data.traits === 'string' ? data.traits.split(',') : data.traits;
     setTraits(traitsArray);
