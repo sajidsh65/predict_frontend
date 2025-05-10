@@ -55,6 +55,8 @@ function MBTIPredictor() {
           It uses machine learning to guess your personality type based on your input, but results may not be 100% accurate.
           <br /><br />
           Please write an honest paragraph about yourself to get the best result.
+          <br /><br />
+          After you enter paragraph and click the button "Predict Yourself", wait 5-10 seconds for results as this time is taken by the model for predictions.
         </p>
         <button className="lets-go-btn" onClick={() => setShowDisclaimer(false)}>
           Let's Go 🚀
